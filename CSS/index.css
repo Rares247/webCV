@@ -1,9 +1,21 @@
+.header {
+    border-style: solid;
+    border-color: blue;
+}
+
 .navBar {
     border-style: solid;
     border-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.navBarButton {
+    
 }
 
 .content {
     border-style: solid;
     border-color: green;
 }
+
