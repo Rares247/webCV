@@ -20,3 +20,14 @@
     border-color: green;
 }
 
+h1 {
+    border-style: solid;
+    border-color: black;
+    text-align: right;
+    padding-right: 20px;
+}
+
+p {
+    border-style: solid;
+    border-color: yellow;
+}
