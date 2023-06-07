@@ -1,6 +1,7 @@
 .header {
     border-style: solid;
     border-color: blue;
+    height: 400px;
 }
 
 .navBar {
@@ -11,7 +12,7 @@
 }
 
 .navBarButton {
-    
+    padding: 15px;
 }
 
 .content {
