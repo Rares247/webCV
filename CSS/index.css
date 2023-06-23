@@ -100,10 +100,15 @@ button {
 button:hover {
     background-color: rgba(0,172,255,1);
     transition: background-color 0.7s ease;
+    
 }
 
 .buttonIcon {
     object-fit: contain;
+}
+.buttonIcon:hover {
+    filter: invert(100%);
+    transition: filter 0.3s ease;
 }
 
 .buttonText {
