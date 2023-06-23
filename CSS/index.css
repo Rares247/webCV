@@ -90,9 +90,23 @@ button {
     width: 100px;
     border-radius: 20px;
     border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-.buttonText {
+button:hover {
+    background-color: rgba(0,172,255,1);
+    transition: background-color 0.7s ease;
+}
 
+.buttonIcon {
+    object-fit: contain;
+}
+
+.buttonText {
+    margin: 0px;
+    font-weight: 500;
 }
