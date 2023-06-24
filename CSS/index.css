@@ -26,21 +26,39 @@ body {
     box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137);
 }
 
+.avatar {
+    width:200px;
+    height:200px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
 .contactCardLeft {
     width: 50%;
     padding-left: 20px;
     border-right-style: inset;
+    display: flex;
+    flex-direction: row;
+}
+
+.titleDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
 }
 
 .title {
     font-size: 30px;
     font-weight: 600;
+    margin: 0px;
 }
 
 .subtitle {
     font-size: 20px;
     font-weight: 500;
     color: grey;
+    margin: 0px;
 }
 
 .contactCardRight {
@@ -100,15 +118,18 @@ button {
 button:hover {
     background-color: rgba(0,172,255,1);
     transition: background-color 0.7s ease;
-    
+    .buttonIcon {
+        filter: invert(100%);
+        transition: filter 0.3s ease;
+    }
+    .buttonText {
+        filter: invert(100%);
+        transition: filter 0.3s ease;
+    }
 }
 
 .buttonIcon {
     object-fit: contain;
-}
-.buttonIcon:hover {
-    filter: invert(100%);
-    transition: filter 0.3s ease;
 }
 
 .buttonText {
