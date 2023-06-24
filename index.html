@@ -9,7 +9,7 @@
         <div class="contactCard"> <!--presentation card-->
             <div class="contactCardLeft">
                 <div class="avatar">
-                    <img class="avatarIcon" src="svg/avatarIcons/avatar1.svg">
+                    <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
                 </div>
                 <div class="titleDiv">
                     <p class="title">Ioan-Rareș Burdulea</p>
@@ -43,6 +43,22 @@
                 </button>
             </div>
             <div class="content"></div>
+            <script>//start of scripting zone
+
+                //function to change the avatar icon
+                let avatarCurrent = 2
+                function changeAvatar() {
+                    let avatarNumber = 9;
+                    if(avatarCurrent < avatarNumber){
+                        document.getElementById("avatar").src = "svg/avatarIcons/avatar" + avatarCurrent + ".svg";
+                        avatarCurrent++;
+                    }
+                    else{
+                        avatarCurrent = 1;
+                        changeAvatar();
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>       
