@@ -9,6 +9,7 @@
         <div class="contactCard"> <!--presentation card-->
             <div class="contactCardLeft">
                 <div class="avatar">
+                    <div class="avatarNote">Click Me!</div>
                     <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
                 </div>
                 <div class="titleDiv">
@@ -25,19 +26,19 @@
         </div>
         <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
-                <button onclick="changeText(1)">
+                <button class="navBarButton" onclick="changeText(1)">
                     <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
                     <p class="buttonText">About Me</p>
                 </button>
-                <button onclick="changeText(2)">
+                <button class="navBarButton" onclick="changeText(2)">
                     <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
                     <p class="buttonText">Education</p>
                 </button>
-                <button>
+                <button class="navBarButton">
                     <img class="buttonIcon" src="/svg/navBarIcons/workIcon.svg">
                     <p class="buttonText">Work</p>
                 </button>
-                <button>
+                <button class="navBarButton">
                     <img class="buttonIcon" src="/svg/navBarIcons/projectIcon.svg">
                     <p class="buttonText">Projects</p>
                 </button>
@@ -94,11 +95,11 @@
                         break;
 
                         case 3:
-                        content.innerText = educationText;
+                        description.innerText = educationText;
                         break;
 
                         case 4:
-                        content.innerText = educationText;
+                        description.innerText = educationText;
                         break;
                     } 
                 }
