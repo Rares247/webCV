@@ -1,0 +1,44 @@
+/* navigation bar */
+.navBar {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 150px;
+    padding: 20px;
+    box-shadow: 0px 10px 44px -7px rgba(0, 0, 0, 0.137);
+}
+
+.navBarButton {
+    margin: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBarButton:hover {
+    background-color: rgba(0,172,255,1);
+    transition: background-color 0.7s ease;
+    .buttonIcon {
+        filter: invert(100%);
+        transition: filter 0.3s ease;
+    }
+    .buttonText {
+        filter: invert(100%);
+        transition: filter 0.3s ease;
+    }
+}
+
+.buttonIcon {
+    object-fit: contain;
+}
+
+.buttonText {
+    margin: 0px;
+    font-weight: 500;
+}

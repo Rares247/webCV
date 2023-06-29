@@ -2,28 +2,32 @@
 <html>
     <head>
         <title>Ioan-Rares Burdulea WebCV</title>
-        <link rel="stylesheet" href="/CSS/index.css"> <!--link to the CSS file-->
+        <!--CSS links-->
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/contactCard.css">
+        <link rel="stylesheet" href="/CSS/content.css">
+        <link rel="stylesheet" href="/CSS/navBar.css">
     </head>
     <body>
         <div class="backgroundPicture"></div> <!--gradient at the top of the page (possible image cascade)-->
-        <div class="contactCard"> <!--presentation card-->
-            <div class="contactCardLeft">
-                <button class="avatar">
-                    <div class="avatarNote">Click Me!</div>
-                    <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
-                </button>
-                <div class="titleDiv">
-                    <p class="title">Ioan-Rareș Burdulea</p>
-                    <p class="subtitle">Front-End Developer<p>
+            <div class="contactCard"> <!--presentation card-->
+                <div class="contactCardLeft">
+                    <button class="avatar">
+                        <div class="avatarNote">Click Me!</div>
+                        <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
+                    </button>
+                    <div class="titleDiv">
+                        <p class="title">Ioan-Rareș Burdulea</p>
+                        <p class="subtitle">Front-End Developer<p>
+                    </div>
+                </div>
+                <div class="contactCardRight">
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Email</span><br>raresburdulea7@gmail.com</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Mobile Number</span><br>07467125182</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Date of Birth</span><br>17th June 2000</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Location</span><br>Sunderland, UK</p>
                 </div>
             </div>
-            <div class="contactCardRight">
-                <p class="gridElement"><span style="color: grey; font-weight:500">Email</span><br>raresburdulea7@gmail.com</p>
-                <p class="gridElement"><span style="color: grey; font-weight:500">Mobile Number</span><br>07467125182</p>
-                <p class="gridElement"><span style="color: grey; font-weight:500">Date of Birth</span><br>17th June 2000</p>
-                <p class="gridElement"><span style="color: grey; font-weight:500">Location</span><br>Sunderland, UK</p>
-            </div>
-        </div>
         <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
                 <button class="navBarButton" onclick="changeText(1)">
