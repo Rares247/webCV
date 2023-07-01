@@ -18,7 +18,7 @@
                     </button>
                     <div class="titleDiv">
                         <p class="title">Ioan-Rareș Burdulea</p>
-                        <p class="subtitle">Front-End Developer<p>
+                        <p class="subtitle">Software Developer<p>
                     </div>
                 </div>
                 <div class="contactCardRight">
@@ -30,11 +30,11 @@
             </div>
         <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
-                <button class="navBarButton" onclick="changeText(1)">
+                <button class="navBarButton">
                     <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
                     <p class="buttonText">About Me</p>
                 </button>
-                <button class="navBarButton" onclick="changeText(2)">
+                <button class="navBarButton">
                     <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
                     <p class="buttonText">Education</p>
                 </button>
@@ -48,66 +48,31 @@
                 </button>
             </div>
             <div class="content">
-                <h1 class="paragraphTitle" id="title"></h1>
+                <h1 class="paragraphTitle" id="title">About Me</h1>
                 <p class="paragraph" id="description">
+                    A young and ambitious software developer looking to expand his knowledge in the field and promotes his work through various projects. 
+                    One of the projects is this website itself, which I created using my knowledge in HTML, CSS and Javascript. 
+                    Finishing my education with a Degree in Computer Science, I now focus on further improving my skills through personal project as well as 
+                    developing myself as a person thourgh work and discipline.
                 </p>
+                <h1 class="paragraphTitle" style="text-align: right; margin-right: 30px;">My Skills</h1>
+                <div class="skillContainer">
+                    <div class="skillContainerItem">
+                        <p>Python</p>
+                    </div>
+                    <div class="skillContainerItem">
+                        <p>C++</p>
+                    </div>
+                    <div class="skillContainerItem">
+                        <p>HTML,CSS</p>
+                    </div>
+                    <div class="skillContainerItem">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
             </div>
             <script>
             //start of scripting zone
-
-                //text variables for the description and title
-                //About Me
-                let aboutMeTitle = "About Me";
-                let aboutMeText =  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec egestas tortor. 
-                    Fusce quis eros mattis, blandit diam quis, euismod ante. Nam neque diam, vestibulum 
-                    sit amet arcu sit amet, sodales malesuada orci. Nulla facilisi. Integer neque lectus, 
-                    condimentum at laoreet id, pulvinar et nibh. Maecenas id nulla leo. Phasellus volutpat
-                    nisl id dui accumsan pellentesque in at nibh. Maecenas scelerisque ex vel aliquet 
-                    accumsan. Nullam massa ipsum, viverra vel nunc vel, pulvinar sollicitudin purus.`;
-
-                //Education
-                let educationTitle = "Education";
-                let educationText = `Aenean et sagittis purus. Maecenas id orci congue, dictum lacus ac, condimentum te
-                    llus. Nulla et libero risus. Nam quis quam ac quam auctor facilisis. Phasellus moll
-                    is pulvinar augue sit amet ultrices. Fusce laoreet, turpis eu sagittis iaculis, ant
-                    e tortor consequat ipsum, vitae faucibus ipsum massa ac mi. Nullam luctus purus ven
-                    enatis justo molestie pellentesque. Fusce porta mauris in mi sodales viverra. Sed i
-                    mperdiet finibus nisi vitae venenatis. Nulla ut purus mauris. Proin id arcu nec urn
-                    a luctus sagittis. Cras nec lacinia dui. Fusce vehicula tortor eu maximus eleifend.
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia c
-                    urae; Etiam nec quam ac felis sagittis porttitor vitae nec ligula.`;
-
-                //encapsulate the title and description fields into variables
-                let title = document.getElementById("title");
-                let description = document.getElementById("description");
-
-                //get default values for the title and description fields
-                title.innerText = aboutMeTitle;
-                description.innerText = aboutMeText;
-
-                //function to change the content of the page
-                function changeText(n) {
-                    switch(n) {
-                        case 1:
-                        title.innerText = aboutMeTitle;
-                        description.innerText = aboutMeText;
-                        break;
-                        
-                        case 2:
-                        title.innerText = educationTitle;
-                        description.innerText = educationText; 
-                        break;
-
-                        case 3:
-                        description.innerText = educationText;
-                        break;
-
-                        case 4:
-                        description.innerText = educationText;
-                        break;
-                    } 
-                }
-
                 //function to change the avatar icon
                 let avatarCurrent = 2
                 function changeAvatar() {

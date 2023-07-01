@@ -27,3 +27,17 @@
     word-spacing: 3px;
     font-weight: 400;
 }
+
+.skillContainer {
+    display:grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto ;
+    align-items: center;
+    border-style: solid;
+    border-color: green;
+}
+
+.skillContainerItem {
+    display: flex;
+    justify-content: center;
+}
