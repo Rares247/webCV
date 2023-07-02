@@ -39,5 +39,13 @@
 
 .skillContainerItem {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: red;
+}
+
+.skillContainerItem img {
+    width: 64px;
 }
