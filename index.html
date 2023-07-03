@@ -16,9 +16,16 @@
                         <div class="avatarNote">Click Me!</div>
                         <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
                     </button>
-                    <div class="titleDiv">
-                        <p class="title">Ioan-Rareș Burdulea</p>
-                        <p class="subtitle">Software Developer<p>
+                    <div class="infoDiv">
+                        <div class="nameDiv">
+                            <p class="name">Ioan-Rareș Burdulea</p>
+                            <p class="title">Software Developer</p>
+                        </div>
+                        <div class="socialButtons" onclick="openLinkedIn()">
+                            <button class="linkedInButton">
+                                <img src="/Images/linkedInLogo.svg"></imb>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="contactCardRight">
@@ -91,6 +98,11 @@
                     }
                 }
 
+                //function to open LinkedIn page
+                function openLinkedIn() {
+                    let link = "http://www.linkedin.com/in/raresburdulea";
+                    window.open(link,'_blank');
+                }
             //end of scripting zone
             </script> 
         </div>

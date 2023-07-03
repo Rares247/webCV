@@ -58,24 +58,46 @@
     pointer-events: none;
 }
 
-.titleDiv{
+.nameDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 30px;
+    margin-top: 20px;
 }
 
-.title {
+.name {
     font-size: 30px;
     font-weight: 600;
     margin: 0px;
 }
 
-.subtitle {
+.title {
     font-size: 20px;
     font-weight: 500;
     color: grey;
     margin: 0px;
+}
+
+.socialButtons {
+    margin-top: 10px;
+}
+
+.linkedInButton {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+.linkedInButton img {
+    border-radius: 2px;
 }
 
 /* right part of the card */
