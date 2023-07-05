@@ -28,7 +28,7 @@
     font-weight: 400;
 }
 
-.skillContainer {
+.contentskillContainer {
     display:grid;
     grid-template-columns: auto auto; 
     grid-template-rows: auto auto ;
@@ -50,4 +50,18 @@
 
 .skillContainerItem img {
     width: 64px;
+}
+
+.contentHobbyCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.hobbyCard {
+    height: 400px;
+    width: 250px;
+    border-style: solid;
+    border-color: red;
 }
