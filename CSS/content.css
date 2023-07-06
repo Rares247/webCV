@@ -56,12 +56,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 
 .hobbyCard {
     height: 400px;
     width: 250px;
-    border-style: solid;
-    border-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137); 
+    transition: transform .2s;
+}
+.hobbyCard:hover {
+    transform: scale(1.1)
+}
+
+.hobbyCardText {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
 }
