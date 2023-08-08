@@ -2,33 +2,117 @@
 <html>
     <head>
         <title>Ioan-Rares Burdulea WebCV</title>
+        <!--CSS links-->
         <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/contactCard.css">
+        <link rel="stylesheet" href="/CSS/content.css">
+        <link rel="stylesheet" href="/CSS/navBar.css">
+        <link rel="stylesheet" href="/CSS/timeline.css">
     </head>
     <body>
-        <div class="mainPage">
-            <div class="header"></div>
+        <div class="backgroundPicture"></div> <!--gradient at the top of the page (possible image cascade)-->
+            <div class="contactCard"> <!--presentation card-->
+                <div class="contactCardLeft">
+                    <button class="avatar">
+                        <div class="avatarNote">Click Me!</div>
+                        <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
+                    </button>
+                    <div class="infoDiv">
+                        <div class="nameDiv">
+                            <p class="name">Ioan-Rareș Burdulea</p>
+                            <p class="title">Software Developer</p>
+                        </div>
+                        <div class="socialButtons" onclick="openLinkedIn()">
+                            <button class="linkedInButton">
+                                <img src="/Images/linkedInLogo.svg"></imb>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactCardRight">
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Email</span><br>raresburdulea7@gmail.com</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Mobile Number</span><br>07467125182</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Date of Birth</span><br>17th June 2000</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Location</span><br>Sunderland, UK</p>
+                </div>
+            </div>
+        <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
                 <button class="navBarButton">
-                    <div>About Me</div>
+                    <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
+                    <p class="buttonText">About Me</p>
                 </button>
                 <button class="navBarButton">
-                    <div>Education</div>
+                    <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
+                    <p class="buttonText">Education</p>
                 </button>
                 <button class="navBarButton">
-                    <div>Work Experience</div>
+                    <img class="buttonIcon" src="/svg/navBarIcons/workIcon.svg">
+                    <p class="buttonText">Work</p>
                 </button>
                 <button class="navBarButton">
-                    <div>Projects</div>
-                </button>
-                <button class="navBarButton">
-                    <div>Contact</div>
+                    <img class="buttonIcon" src="/svg/navBarIcons/projectIcon.svg">
+                    <p class="buttonText">Projects</p>
                 </button>
             </div>
             <div class="content">
-                <p>
-                    <!--Text that will be added from a file-->
-                </p>
+                <div class="timeline">
+                    <div class="timelineContainer left">
+                        <div class="timelineTextbox">
+                            <h2>Equans</h2>
+                            <small>2022 - Present</small>
+                            <p>Random text I added for testing purposes</p>
+                        </div>
+                    </div>
+
+                    <div class="timelineContainer right">
+                        <div class="timelineTextbox">
+                            <h2>Equans</h2>
+                            <small>2022 - Present</small>
+                            <p>Random text I added for testing purposes</p>
+                        </div>
+                    </div>
+
+                    <div class="timelineContainer left">
+                        <div class="timelineTextbox">
+                            <h2>Equans</h2>
+                            <small>2022 - Present</small>
+                            <p>Random text I added for testing purposes</p>
+                        </div>
+                    </div>
+
+                    <div class="timelineContainer right">
+                        <div class="timelineTextbox">
+                            <h2>Equans</h2>
+                            <small>2022 - Present</small>
+                            <p>Random text I added for testing purposes</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <script>
+            //start of scripting zone
+                //function to change the avatar icon
+                let avatarCurrent = 2
+                function changeAvatar() {
+                    let avatarNumber = 9;
+                    if(avatarCurrent < avatarNumber){
+                        document.getElementById("avatar").src = "svg/avatarIcons/avatar" + avatarCurrent + ".svg";
+                        avatarCurrent++;
+                    }
+                    else{
+                        avatarCurrent = 1;
+                        changeAvatar();
+                    }
+                }
+
+                //function to open LinkedIn page
+                function openLinkedIn() {
+                    let link = "http://www.linkedin.com/in/raresburdulea";
+                    window.open(link,'_blank');
+                }
+            //end of scripting zone
+            </script> 
         </div>
     </body>
 </html>       
