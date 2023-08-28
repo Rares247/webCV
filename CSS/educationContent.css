@@ -8,114 +8,51 @@
 }
 
 .content {
-    border-radius: 20px;
-    border-style: none;
     background-color: white;
     width: 100%;
     margin-left: 30px;
-    box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137);
 }
 
-.paragraphTitle {
-    margin-left: 30px;
+.timeline {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;;
 }
 
-.paragraph {
-    margin-left: 30px;
-    margin-right: 30px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    font-weight: 400;
+.leftCard, .rightCard {
+    width: 50%;
+    height: 200px;
+    box-shadow: 0px 10px 44px -7px rgba(0, 0, 0, 0.137);
 }
 
-.contentskillContainer {
-    display:grid;
-    grid-template-columns: auto auto; 
-    grid-template-rows: auto auto ;
-    grid-gap: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    align-items: center;
-}
-
-.skillContainerItem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    padding-top: 15px;
-    box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137);
-}
-
-.skillContainerItem img {
-    width: 64px;
-}
-
-.contentHobbyCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
-.hobbyCard {
-    height: 400px;
-    width: 250px;
-    cursor: pointer;
-    transition: transform .2s;
-    perspective: 1000px; 
-}
-
-.hobbyCardInner {
+.leftCard {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-}
-
-.hobbyCard:hover .hobbyCardInner {
-    transform: rotateY(180deg);
-  }
-
-.hobbyCardFront, .hobbyCardBack {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-.hobbyCardFront {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137); 
-  }
+    justify-content: right;
+    left: 0;
+    border-right: 5px solid black;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
 
-.hobbyCardBack {
-    transform: rotateY(180deg);
-    border-radius: 20px;
-    box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137); 
+.rightCard {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 50%;
+    border-left: 5px solid black;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
 }
 
-.hobbyCardTextFront, .hobbyCardTextBack {
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
+.leftCard h1, .rightCard h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.hobbyCardTextBack {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 5px;
+.leftCard h1 {
+    margin-right: 10px;
+}
+
+.rightCard h1 {
+    margin-left: 10px;
 }
