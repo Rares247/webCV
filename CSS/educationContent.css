@@ -23,36 +23,44 @@
     width: 50%;
     height: 200px;
     box-shadow: 0px 10px 44px -7px rgba(0, 0, 0, 0.137);
+    display: flex;
 }
 
 .leftCard {
     position: relative;
-    display: flex;
     justify-content: right;
     left: 0;
     border-right: 5px solid black;
     -webkit-border-top-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
+    justify-content: space-between;
 }
 
 .rightCard {
     position: relative;
-    display: flex;
     left: 50%;
     border-left: 5px solid black;
     -webkit-border-top-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
+    justify-content: space-between;
 }
 
-.leftCard h1, .rightCard h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+.rightInfo {
+    margin-left: 10px;
 }
 
-.leftCard h1 {
+.leftInfo h1, .leftInfo h2 {
+    text-align: right;
+}
+
+.leftInfo {
     margin-right: 10px;
 }
 
-.rightCard h1 {
-    margin-left: 10px;
+.facultyName {
+    font-size: 20px;;
+}
+
+.leftCard {
+    
 }
