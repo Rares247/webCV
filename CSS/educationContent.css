@@ -24,6 +24,7 @@
     height: 200px;
     box-shadow: 0px 10px 44px -7px rgba(0, 0, 0, 0.137);
     display: flex;
+    align-items: center;
 }
 
 .leftCard {
@@ -59,8 +60,4 @@
 
 .facultyName {
     font-size: 20px;;
-}
-
-.leftCard {
-    
 }
