@@ -25,6 +25,7 @@
     box-shadow: 0px 10px 44px -7px rgba(0, 0, 0, 0.137);
     display: flex;
     align-items: center;
+    transition: transform .2s;
 }
 
 .leftCard {
@@ -44,6 +45,10 @@
     -webkit-border-top-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
     justify-content: space-between;
+}
+
+.leftCard:hover, .rightCard:hover {
+    transform: scale(1.1);
 }
 
 .rightInfo {
