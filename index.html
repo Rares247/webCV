@@ -37,19 +37,19 @@
             </div>
         <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
-                <button class="navBarButton" onclick>
+                <button class="navBarButton" onclick="window.location.href='index.html';">
                     <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
                     <p class="buttonText">About Me</p>
                 </button>
-                <button class="navBarButton">
+                <button class="navBarButton" onclick="window.location.href='education.html';">
                     <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
                     <p class="buttonText">Education</p>
                 </button>
-                <button class="navBarButton">
+                <button class="navBarButton" onclick="window.location.href='work.html';">
                     <img class="buttonIcon" src="/svg/navBarIcons/workIcon.svg">
                     <p class="buttonText">Work</p>
                 </button>
-                <button class="navBarButton">
+                <button class="navBarButton" onclick="window.location.href='projects.html';">
                     <img class="buttonIcon" src="/svg/navBarIcons/projectIcon.svg">
                     <p class="buttonText">Projects</p>
                 </button>
@@ -128,30 +128,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-            //start of scripting zone
-                //function to change the avatar icon
-                let avatarCurrent = 2
-                function changeAvatar() {
-                    let avatarNumber = 9;
-                    if(avatarCurrent < avatarNumber){
-                        document.getElementById("avatar").src = "svg/avatarIcons/avatar" + avatarCurrent + ".svg";
-                        avatarCurrent++;
-                    }
-                    else{
-                        avatarCurrent = 1;
-                        changeAvatar();
-                    }
-                }
-
-                //function to open LinkedIn page
-                function openLinkedIn() {
-                    let link = "http://www.linkedin.com/in/raresburdulea";
-                    window.open(link,'_blank');
-                }
-
-            //end of scripting zone
-            </script> 
         </div>
+        <script src="scripts.js"></script> 
     </body>
 </html>       

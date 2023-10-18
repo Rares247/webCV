@@ -2,33 +2,135 @@
 <html>
     <head>
         <title>Ioan-Rares Burdulea WebCV</title>
-        <link rel="stylesheet" href="/CSS/index.css">
+        <!--CSS links-->
+        <link rel="stylesheet" href="/CSS/background.css">
+        <link rel="stylesheet" href="/CSS/contactCard.css">
+        <link rel="stylesheet" href="/CSS/navBar.css">
+        <link rel="stylesheet" href="/CSS/projectsContent.css">
     </head>
     <body>
-        <div class="mainPage">
-            <div class="header"></div>
+        <div class="backgroundPicture"></div> <!--gradient at the top of the page (possible image cascade)-->
+            <div class="contactCard"> <!--presentation card-->
+                <div class="contactCardLeft">
+                    <button class="avatar">
+                        <div class="avatarNote">Click Me!</div>
+                        <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
+                    </button>
+                    <div class="infoDiv">
+                        <div class="nameDiv">
+                            <p class="name">Ioan-Rareș Burdulea</p>
+                            <p class="title">Software Developer</p>
+                        </div>
+                        <div class="socialButtons" onclick="openLinkedIn()">
+                            <button class="linkedInButton">
+                                <img src="/Images/linkedInLogo.svg"></imb>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactCardRight">
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Email</span><br>raresburdulea7@gmail.com</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Mobile Number</span><br>07467125182</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Date of Birth</span><br>17th June 2000</p>
+                    <p class="gridElement"><span style="color: grey; font-weight:500">Location</span><br>Sunderland, UK</p>
+                </div>
+            </div>
+        <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
-                <button class="navBarButton">
-                    <div>About Me</div>
+                <button class="navBarButton" onclick="window.location.href='index.html';">
+                    <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
+                    <p class="buttonText">About Me</p>
                 </button>
-                <button class="navBarButton">
-                    <div>Education</div>
+                <button class="navBarButton" onclick="window.location.href='education.html';">
+                    <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
+                    <p class="buttonText">Education</p>
                 </button>
-                <button class="navBarButton">
-                    <div>Work Experience</div>
+                <button class="navBarButton" onclick="window.location.href='work.html';">
+                    <img class="buttonIcon" src="/svg/navBarIcons/workIcon.svg">
+                    <p class="buttonText">Work</p>
                 </button>
-                <button class="navBarButton">
-                    <div>Projects</div>
-                </button>
-                <button class="navBarButton">
-                    <div>Contact</div>
+                <button class="navBarButton" onclick="window.location.href='projects.html';">
+                    <img class="buttonIcon" src="/svg/navBarIcons/projectIcon.svg">
+                    <p class="buttonText">Projects</p>
                 </button>
             </div>
             <div class="content">
-                <p>
-                    <!--Text that will be added from a file-->
-                </p>
+                <div class="leftCard">
+                    <h1>University Thesis: Game Prototype</h1>
+                    <div class="cardContent">
+                        <div class="video">
+                            <video width="420" height="260" controls controlsList="nodownload">
+                                <source src="/videos/edited.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="descritpion" style="margin-left: 15px;">
+                            <p>
+                                The projects presented in this video is my thesis project which I developed independently in my last year of university. 
+                                This was accompanied by the required documentation which illustrated my thorough research in terms of tools, 
+                                techniques and inspiration for the prototype as well as game design elements such as the story, character 
+                                profile and enemy statistics.
+                                For this project, I developed a number of systems including:
+                            </p>
+                            <ul>
+                                <li>Health and Damage System</li>
+                                <li>Levelling and Currency System</li>
+                                <li>Mission and Dialogue System</li>
+                                <li>Flocking Algorithm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightCard">
+                    <h1 style="text-align: right;">2D Spaceship Game</h1>
+                    <div class="cardContent">
+                        <div class="descritpion" style="margin-right: 15px;">
+                            <p>
+                                The next project was a 2D space shooter which I also created during my last year of university.
+                                 I considered this project particularly educational as not only it laid the foundation of my C++
+                                  programming, but it also taught me important programming principles such as polymorphism, 
+                                  encapsulation, inheritance and dependencies. This project was about creating a game engine 
+                                  using a shell provided by our lecturer. 
+                                  <br>
+                                  <br>Besides the programming techniques described above, 
+                                  I also improved my knowledge about game development architectures, how important is the 
+                                  architecture of a game in both development and further expansion, as well as how to approach 
+                                  a project of this size. 
+                            </p>
+                        </div>
+                        <div class="video">
+                            <video width="420" height="260" controls controlsList="nodownload">
+                                <source src="/videos/spaceshipGameEdited.mp4" type="video/mp4">
+                            </video>
+                        </div> 
+                    </div>
+                </div>
+                <div class="leftCard">
+                    <h1>Automation Tool</h1>
+                    <div class="cardContent">
+                        <div class="automationImages">
+                            <img src="/Images/automationTool1.png" width="300" >
+                            <img src="/Images/automationTool2.png" width="300" >
+                        </div>
+                        <div class="descritpion">
+                            <p>
+                                The images of the left present the interface for the automation tool that 
+                                I created to improve my day-to-day efficient and reduce the number of 
+                                repetitive tasks. This was one of my first projects in Python and I 
+                                feel like it helped me to understand the capabilities of this programming language.
+                                <br>
+                                <br>The first tool is designed to take a specific block of text, 
+                                split it into different lines, parse the lines based on key words, then 
+                                generate a note with only the key information alongside automatically-generated 
+                                data based on the input. 
+                                <br>
+                                <br>The second one is a password generator which is 
+                                designed to create a password based on specific parameters based on the date. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="scripts.js"></script> 
     </body>
 </html>       
