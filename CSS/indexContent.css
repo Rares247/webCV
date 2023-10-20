@@ -28,6 +28,7 @@
     font-weight: 400;
 }
 
+/* Skill Container*/
 .contentskillContainer {
     display:grid;
     grid-template-columns: auto auto; 
@@ -70,6 +71,30 @@
     transition: transform .2s;
     perspective: 1000px; 
 }
+
+@media screen and (max-width: 1800px) {
+    .hobbyCard {
+        height: 350px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .contentHobbyCards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .hobbyCard {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .contentHobbyCards {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
 
 .hobbyCardInner {
     position: relative;
