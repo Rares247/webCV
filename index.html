@@ -9,10 +9,28 @@
         <link rel="stylesheet" href="/CSS/navBar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div class="backgroundPicture"></div> <!--gradient at the top of the page (possible image cascade)-->
-            <div class="contactCard"> <!--presentation card-->
-                <div class="contactCardLeft">
+    <body> 
+        <div class="backgroundPicture"> <!--gradient at the top of the page (possible image cascade)-->
+            <button class="navMenuButton" onclick="navBarToggle()"> <!--navigation bar button for mobile -->
+                <img src="/svg/navBarIcons/navButtonIcon.svg">
+            </button>
+        </div>
+        <div class="navBarMobile" id="mobileNavigation"> <!--mobile verison of the navigation bar -->
+            <button class="navBarButtonMobile" onclick="window.location.href='index.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
+            </button>
+            <button class="navBarButtonMobile" onclick="window.location.href='education.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
+            </button>
+            <button class="navBarButtonMobile" onclick="window.location.href='work.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/workIcon.svg">
+            </button>
+            <button class="navBarButtonMobile" onclick="window.location.href='projects.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/projectIcon.svg">
+            </button>
+        </div>
+        <div class="contactCard"> <!--presentation card-->
+            <div class="contactCardLeft">
                     <button class="avatar">
                         <div class="avatarNote">Click Me!</div>
                         <img class="avatarIcon" id="avatar" src="svg/avatarIcons/avatar1.svg" onclick="changeAvatar()">
@@ -28,14 +46,14 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <div class="contactCardRight">
+            </div>
+            <div class="contactCardRight">
                     <p class="gridElement"><span style="color: grey; font-weight:500">Email</span><br>raresburdulea7@gmail.com</p>
                     <p class="gridElement"><span style="color: grey; font-weight:500">Mobile Number</span><br>07467125182</p>
                     <p class="gridElement"><span style="color: grey; font-weight:500">Date of Birth</span><br>17th June 2000</p>
                     <p class="gridElement"><span style="color: grey; font-weight:500">Location</span><br>Sunderland, UK</p>
-                </div>
             </div>
+        </div>
         <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
                 <button class="navBarButton" onclick="window.location.href='index.html';">
@@ -57,7 +75,7 @@
             </div>
             <div class="content">
                 <h1 class="paragraphTitle" id="title">About Me</h1>
-                <p class="paragraph" id="description">
+                <p class="paragraph">
                     A young and ambitious software developer looking to expand his knowledge in the field and promotes his work through various projects. 
                     One of the projects is this website itself, which I created using my knowledge in HTML, CSS and Javascript. 
                     Finishing my education with a Degree in Computer Science, I now focus on further improving my skills through personal project as well as 
@@ -130,6 +148,6 @@
                 </div>
             </div>
         </div>
-        <script src="scripts.js"></script> 
+        <script src="scripts.js"></script>
     </body>
 </html>       
