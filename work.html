@@ -7,11 +7,30 @@
         <link rel="stylesheet" href="/CSS/contactCard.css">
         <link rel="stylesheet" href="/CSS/navBar.css">
         <link rel="stylesheet" href="/CSS/workContent.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <script src="scripts.js"></script> 
-        <div class="backgroundPicture"></div> <!--gradient at the top of the page (possible image cascade)-->
-            <div class="contactCard"> <!--presentation card-->
+        <div class="backgroundPicture"> <!--gradient at the top of the page (possible image cascade)-->
+            <button class="navMenuButton" onclick="navBarToggle()"> <!--navigation bar button for mobile -->
+                <img src="/svg/navBarIcons/navButtonIcon.svg">
+            </button>
+        </div>
+        <div class="navBarMobile" id="mobileNavigation"> <!--mobile verison of the navigation bar -->
+            <button class="navBarButtonMobile" onclick="window.location.href='index.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/aboutMeIcon.svg">
+            </button>
+            <button class="navBarButtonMobile" onclick="window.location.href='education.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/educationIcon.svg">
+            </button>
+            <button class="navBarButtonMobile" onclick="window.location.href='work.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/workIcon.svg">
+            </button>
+            <button class="navBarButtonMobile" onclick="window.location.href='projects.html';">
+                <img class="buttonIcon" src="/svg/navBarIcons/projectIcon.svg">
+            </button>
+        </div>
+        <div class="contactCard"> <!--presentation card-->
                 <div class="contactCardLeft">
                     <button class="avatar">
                         <div class="avatarNote">Click Me!</div>
@@ -35,7 +54,7 @@
                     <p class="gridElement"><span style="color: grey; font-weight:500">Date of Birth</span><br>17th June 2000</p>
                     <p class="gridElement"><span style="color: grey; font-weight:500">Location</span><br>Sunderland, UK</p>
                 </div>
-            </div>
+        </div>
         <div class="contentWrapper">  <!--wrapper for the content: navigation and text/images-->
             <div class="navBar">
                 <button class="navBarButton" onclick="window.location.href='index.html';">

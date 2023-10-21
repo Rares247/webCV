@@ -1,6 +1,6 @@
 /* navigation desktop */
 .navBar {
-    display: none;
+    display: flex;
     flex-direction: column;
     border-radius: 20px;
     width: 150px;
@@ -46,6 +46,7 @@
 
 /* navigation mobile */
 .navMenuButton {
+    display: none;
     width: 60px;
     height: 60px;
     margin-left: 35px;
@@ -84,4 +85,14 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .navBar {
+        display:none;
+    }
+
+    .navMenuButton {
+        display: block;
+    }
 }
