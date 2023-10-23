@@ -21,6 +21,12 @@
     .content {
         margin-left: 0;
     }
+
+    .contentWrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
 }
 
 .paragraphTitle {
@@ -96,10 +102,11 @@
         margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 450px) {
     .contentHobbyCards {
         display: grid;
         grid-template-columns: auto;
+        justify-content: center;
     }
 }
 

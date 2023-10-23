@@ -20,6 +20,13 @@
     font-size: 20px;
 }
 
+/* media query for the contentDiv */
+@media screen and (max-width: 400px) {
+    .content {
+        margin-left: 0;
+    }
+}
+
 .logo {
     margin-top: 20px;
     display: flex;
