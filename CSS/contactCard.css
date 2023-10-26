@@ -10,7 +10,7 @@
     box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .contactCard {
         flex-direction: column;
         background-color: white;
@@ -31,7 +31,7 @@
     border-top-right-radius: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .contactCardLeft {
         justify-content: center;
         text-align: center;
@@ -67,7 +67,7 @@
     }
  }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .avatar {
         display: none;
     }
@@ -113,7 +113,7 @@
     margin-top: 10px;
     display: flex;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .socialButtons {
        width: 100%;
        justify-content: center;
@@ -155,7 +155,7 @@
     border-left-style: solid;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .contactCardRight {
         display: grid;
         grid-template-columns: auto;
@@ -172,7 +172,7 @@
     font-weight: 700;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .gridElement {
         text-align: center;
     }

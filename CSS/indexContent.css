@@ -17,7 +17,7 @@
 }
 
 /* media query for the contentDiv */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .content {
         margin-left: 0;
     }
