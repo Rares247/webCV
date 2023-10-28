@@ -13,13 +13,14 @@
     margin-left: 30px;
 }
 
-/* media query for the contentDiv */
-@media screen and (max-width: 400px) {
+/* contentDiv MQ */
+@media screen and (max-width: 450px) {
     .content {
         margin-left: 0;
     }
 }
 
+/* Timeline */
 .timeline {
     display: flex;
     flex-direction: column;
@@ -28,7 +29,8 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 400px) {
+/* Timeline MQ */
+@media screen and (max-width: 450px) {
     .timeline {
         display: flex;
         flex-direction: column;
@@ -39,6 +41,7 @@
     }
 }
 
+/* Shared Card Attributes */
 .leftCard, .rightCard {
     width: 50%;
     height: 200px;
@@ -48,6 +51,7 @@
     transition: transform .2s;
 }
 
+/* Left Card */
 .leftCard {
     position: relative;
     justify-content: right;
@@ -58,7 +62,8 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+/* Left Card MQ */
+@media screen and (max-width: 450px) {
     .leftCard {
         border-right: none;
         display: flex;
@@ -71,6 +76,7 @@
     }
 }
 
+/* Right Card */
 .rightCard {
     position: relative;
     left: 50%;
@@ -80,7 +86,8 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+/* Rigth Card MQ */
+@media screen and (max-width: 450px) {
     .rightCard {
         border-left: none;
         display: flex;
@@ -91,6 +98,22 @@
     }
 }
 
+/* Separator for Mobile Version */
+.separator {
+    display: none;
+}
+
+/* Separator MQ */
+@media screen and (max-width: 450px) {
+    .separator {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+}
+
+/* Extra */
 .leftCard:hover, .rightCard:hover {
     transform: scale(1.1);
 }
@@ -106,20 +129,15 @@
 .leftInfo {
     margin-right: 10px;
 }
-
+@media screen and (max-width: 450px) {
+    .leftInfo h1, .leftInfo h2 {
+        text-align: center;
+    }    
+    .leftInfo, .rightInfo {
+        margin-right: 0px; 
+        margin-left: 0px;
+    }
+}
 .facultyName {
     font-size: 20px;;
-}
-
-.separator {
-    display: none;
-}
-
-@media screen and (max-width: 400px) {
-    .separator {
-        display: flex;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        justify-content: center;
-    }
 }

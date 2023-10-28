@@ -7,6 +7,7 @@
     margin-bottom: 13%;
 }
 
+/* Content */
 .content {
     border-radius: 20px;
     border-style: none;
@@ -20,7 +21,7 @@
     font-size: 20px;
 }
 
-/* media query for the contentDiv */
+/* contentDiv MQ */
 @media screen and (max-width: 450px) {
     .content {
         margin-left: 0;
@@ -28,40 +29,45 @@
     }
 }
 
+/* Logo */
 .logo {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Logo MQ */
 @media screen and (max-width: 450px) {
     .logo {
         padding: 5px;
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* Paragraphs */
 .textDiv {
     margin-left: 20px;
     margin-right: 20px;
     line-height: 30px;
 }
 
+/* Lists */
 .listElement {
     margin-top: 20px;
     border-style: solid;
     border-radius: 15px;
     padding: 10px;
 }
+
+/* Lists MQ */
 @media screen and (max-width: 450px) {
     .listElement {
         text-align: center;
     }
 }
-
 ul {
     list-style-type: none;
     display: flex;
