@@ -6,6 +6,8 @@
     margin-top: 30px;
     margin-bottom: 13%;
 }
+
+/* ContentWrapper MQ */
 @media screen and (max-width: 450px) {
     .contentWrapper {
         margin-left: 5%;
@@ -28,13 +30,14 @@
     box-shadow: 0px 13px 44px -7px rgba(0, 0, 0, 0.137);
 }
 
-/* contentDiv media query */
+/* contentDiv MQ */
 @media screen and (max-width: 450px) {
     .content {
         margin-left: 0;
     }
 }
 
+/* Right Card  */
 .rightCard {
     margin-left: 30px;
     margin-right: 30px;
@@ -44,13 +47,15 @@
 .rightTitle {
     text-align: right;
 }
+
+/* Right Card MQ */
 @media screen and (max-width: 450px) {
     .rightTitle {
         text-align: center;
     }
 }
 
-
+/* Left Card */
 .leftCard {
     display: flex;
     flex-direction: column;
@@ -62,6 +67,8 @@
     display: flex;
     margin-bottom: 15px;
 }
+
+/* Left Card MQ */
 @media screen and (max-width: 450px) {
     .cardContent {
         display: flex;
@@ -69,10 +76,12 @@
     }
 }
 
+/* Videos */
 .video {
     box-shadow: 0px 15px 44px -7px rgba(0, 0, 0, 0.137);
 }
 
+/* Auto Images */
 .automationImages {
     display: flex;
     flex-direction: row;
@@ -84,6 +93,8 @@
     max-width: 300px;
     height: auto;
 }
+
+/* Auto Images MQ */
 @media screen and (max-width: 450px) {
     .automationImages {
         flex-direction: column;
