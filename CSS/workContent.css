@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
 }
-img {
+.logoImage {
     max-width: 100%;
     height: auto;
 }
